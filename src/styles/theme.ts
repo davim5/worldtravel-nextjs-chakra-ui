@@ -16,6 +16,10 @@ export const theme = extendTheme({
             info:"#DADADA"
         }
     },
+    fonts:{
+        heading: 'Poppins',
+        body: 'Poppins',
+    },
     styles: {
         global:{
             body:{
