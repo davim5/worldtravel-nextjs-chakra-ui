@@ -1,4 +1,5 @@
 import { Flex, Heading, SimpleGrid, Text, Box, Image, HStack } from "@chakra-ui/react";
+import { ContinentBanner } from "../../components/ContinentBanner";
 import { Header } from "../../components/Header";
 
 
@@ -6,27 +7,7 @@ export default function Continent(){
     return (
         <Flex flexDir="column" justify="center" align="center">
             <Header/>
-            <Flex
-            w="100%" 
-            h="500px" 
-            px="36"
-            pt="72"
-            bgImage="url(/images/banner_europe.png)" 
-            bgPosition="center"
-            bgRepeat="no-repeat"
-            bgSize="cover"
-            align="center"
-            mb="80px"
-            >
-                <Heading
-                fontWeight="semibold"
-                color="light.white"
-                fontSize="48px"
-                textAlign="left"
-                >
-                    Europe
-                </Heading>
-            </Flex>
+            <ContinentBanner/>
 
             <SimpleGrid mx="140" columns={2} mb="60px">
                 <Text
